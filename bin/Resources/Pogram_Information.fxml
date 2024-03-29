@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Program_Information_Controller">
+   <children>
+      <Button fx:id="previous" layoutX="138.0" layoutY="382.0" mnemonicParsing="false" onAction="#previous_button" prefHeight="33.0" prefWidth="83.0" style="-fx-background-color: #FFA500;" text="Previous" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="next" layoutX="236.0" layoutY="382.0" mnemonicParsing="false" onAction="#next_button" prefHeight="33.0" prefWidth="83.0" style="-fx-background-color: #006400;" text="Next" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="prog_name" layoutX="199.0" layoutY="14.0" text="Label">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="company_name" layoutX="137.0" layoutY="53.0" text="Company Name" />
+      <Label layoutX="14.0" layoutY="54.0" text="Name">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="136.0" text="Eligibility Criteria">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="89.0" text="Funding Source">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="183.0" text=" Fund Budget">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="funding_source" layoutX="137.0" layoutY="88.0" text="Company Name" />
+      <Label fx:id="ciriteria" layoutX="137.0" layoutY="135.0" text="Company Name" />
+      <Label fx:id="fund" layoutX="137.0" layoutY="182.0" text="Company Name" />
+      <Button fx:id="approve" layoutX="194.0" layoutY="267.0" mnemonicParsing="false" onAction="#approveApplication" prefHeight="33.0" prefWidth="83.0" style="-fx-background-color: #00FF00 #00FF00;" text="Approve" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

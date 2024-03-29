@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="701.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.LoginController">
+   <children>
+      <Label layoutX="206.0" layoutY="152.0" text="Username" textFill="DODGERBLUE">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font></Label>
+      <Label layoutX="209.0" layoutY="210.0" text="Password" textFill="DODGERBLUE">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font></Label>
+      <TextField fx:id="username" layoutX="306.0" layoutY="146.0" prefHeight="32.0" prefWidth="169.0" promptText="Username" />
+      <PasswordField fx:id="password" layoutX="306.0" layoutY="204.0" prefHeight="32.0" prefWidth="169.0" promptText="Password" />
+     <Button fx:id="login" layoutX="333.0" layoutY="312.0" mnemonicParsing="false" onAction="#AuthenticateUser" prefHeight="32.0" prefWidth="99.0" style="-fx-background-color: #6495ED;" text="Login">
+
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font></Button>
+       <ComboBox fx:id="usertype" accessibleRole="CHECK_MENU_ITEM" layoutX="306.0" layoutY="260.0" onAction="#SelectChoice" prefHeight="25.0" prefWidth="169.0" promptText="User Type">
+      </ComboBox>
+      <Label layoutX="208.0" layoutY="263.0" text="User Type" textFill="DODGERBLUE">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="333.0" layoutY="360.0" mnemonicParsing="false" onAction="#AuthenticateUser" prefHeight="32.0" prefWidth="99.0" style="-fx-background-color: #CCCCCC;" text="SignUp">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="47.0" layoutY="33.0" text="BeneCARE">
+         <font>
+            <Font name="Century Gothic Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="88.0" fitWidth="179.0" layoutX="301.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Pro-poor%20growth%20approach%20color%20icon.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="392.0" text="produced  by: " />
+      <Label layoutX="103.0" layoutY="392.0" text="Cortex PVT Ltd" />
+   </children>
+</AnchorPane>
